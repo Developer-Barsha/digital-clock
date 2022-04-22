@@ -12,3 +12,20 @@ setInterval(()=>{
     mn.style.transform = `rotateZ(${mm}deg)`
     sc.style.transform = `rotateZ(${ss}deg)`
 })
+
+// digital clock
+let hours = document.getElementById('hours')
+let minutes = document.getElementById('minutes')
+let seconds = document.getElementById('seconds')
+let ampm = document.getElementById('ampm')
+
+let h = new Date().getHours();
+let m = new Date().getMinutes();
+let s = new Date().getSeconds();
+
+// add 0 before 1 digit number
+
+
+hours.innerHTML = h;
+minutes.innerHTML = m;
+seconds.innerHTML = s;
