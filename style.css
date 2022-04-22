@@ -31,8 +31,8 @@ body{
 
 .clock{
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background: #2f363e;
     box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
@@ -42,7 +42,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .clock::before{
@@ -75,8 +75,8 @@ body{
 
 .circle{
     position: absolute;
-    width: 260px;
-    height: 260px;
+    width: 210px;
+    height: 210px;
     border: 2px solid rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     display: flex;
@@ -104,14 +104,14 @@ body{
 }
 
 .circle2{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     z-index: 9;
 }
 
 .circle3{
-    width: 140px;
-    height: 140px;
+    width: 90px;
+    height: 90px;
     z-index: 8;
 }
 
