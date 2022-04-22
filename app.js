@@ -23,7 +23,15 @@ setInterval(()=>{
     let h = new Date().getHours();
     let m = new Date().getMinutes();
     let s = new Date().getSeconds();
-    
+
+    // set am/pm
+    let am = h>=12 ? "PM":"AM";
+
+    // convert 24hour clock to 12hour clock
+    if(h>12){
+        h= h-12;
+    }
+
     // add 0 before 1 digit number
     h = (h < 10) ? '0' + h : h;
     m = (m < 10) ? '0' + m : m;
@@ -32,4 +40,5 @@ setInterval(()=>{
     hours.innerHTML = h;
     minutes.innerHTML = m;
     seconds.innerHTML = s;
+    ampm.innerHTML = am;
 })
